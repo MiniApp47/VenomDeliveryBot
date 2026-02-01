@@ -1020,9 +1020,9 @@
                             <p style="text-align: center; color: white; line-height: 1.8;">
                                 🛍️ <strong>Whatsapp</strong> : Passer commande<br>
                                 🍽️ <strong>Telegram</strong> : Voir le Menu / Produits<br>
-                                🔐 <strong>Luffa</strong> : Contact Secours<br><br>
+                                🔐 <strong>Potato</strong> : Contact Secours<br><br>
                                 
-                                📲 <strong>Disponibles sur :</strong> Luffa, Potato & Telegram<br>
+                                📲 <strong>Disponibles sur :</strong>Whatsapp, Potato & Snapchat<br>
                                 💬 Pour toute info, n’hésitez pas à nous contacter<br><br>
                                 
                                 <span style="color: #ff5252; font-weight: bold;">✅ Commandes uniquement sur WhatsApp</span>
@@ -1040,12 +1040,30 @@
                         </button>
                         <div class="accordion-content">
                             <p style="text-align: center; color: white; line-height: 1.6;">
-                                <strong>🚚 Bienvenue dans le meilleur service de livraison du 84</strong><br><br>
-                                🌿 Large choix de variétés<br>
-                                ✅ Qualité irréprochable<br>
-                                ⏱ Livraison rapide et discrète<br><br>
-                                
-                                🚚 Vos produits préférés directement chez vous<br><br>
+                                <p style="text-align: center; margin-bottom: 20px;">
+                                    🚚 <strong>LIVRAISON : GARD, ARDÈCHE & LOZÈRE</strong>
+                                </p>
+                            
+                                <div style="margin-bottom: 15px;">
+                                    🌿 <strong>Large choix de variétés</strong><br>
+                                    Une sélection rigoureuse pour une satisfaction garantie.
+                                </div>
+                            
+                                <div style="margin-bottom: 15px;">
+                                    ✅ <strong>Qualité irréprochable</strong><br>
+                                    Le standard d'excellence pour tous vos produits.
+                                </div>
+                            
+                                <div style="margin-bottom: 20px;">
+                                    ⏱ <strong>Livraison rapide et discrète</strong><br>
+                                    Logistique optimisée, confidentialité totale.
+                                </div>
+                            
+                                <hr style="border: 0; border-top: 1px solid #eee; margin: 20px 0;">
+                            
+                                <p style="text-align: center; font-weight: bold; font-size: 1.1em;">
+                                    📦 Vos produits préférés directement chez vous !
+                                </p>
                                 
                                 <span style="color: #ff5252; font-weight: bold;">⚠️ Prise de commande uniquement sur WhatsApp</span>
                             </p>
@@ -1062,10 +1080,9 @@
                         </button>
                         <div class="accordion-content">
                             <p style="text-align: center; color: white; line-height: 1.8;">
-                                <strong>⏰ Horaires de livraison</strong><br><br>
-                                • Lundi → Jeudi : 12h – 00h<br>
-                                • Vendredi → Samedi : 12h – 01h<br>
-                                • Dimanche : 12h – 22h
+                                <strong>⏰ HORAIRES DE LIVRAISON</strong><br><br>
+                                🚀 <strong>7j/7</strong> — <strong>12h00 à 02h00</strong><br>
+                                <span style="font-size: 0.9em; opacity: 0.8;">Service continu sans interruption</span>
                             </p>
                         </div>
                     </div>
@@ -1079,11 +1096,12 @@
                             </svg>
                         </button>
                         <div class="accordion-content">
-                            <p style="text-align: center; color: white; line-height: 1.6;">
-                                <strong>📍 Une seule adresse</strong><br>
-                                Rue Marivaux – 84100 Orange ✅<br><br>
-                                🕒 <strong>OUVERT 24/7</strong><br><br>
-                                <i>"Passez quand vous voulez, repartez avec ce qu’il vous faut"</i> 🚶‍♂️📦
+                            <p style="text-align: center; color: white; line-height: 1.8;">
+                                <strong>🤝 MEET-UP RÉSERVÉ</strong><br>
+                                📦 <strong>Uniquement pour grosses commandes</strong><br><br>
+                                📍 <em>Lieu communiqué après validation</em><br>
+                                ✅ <strong>Sécurité et discrétion garanties</strong><br><br>
+                                <i>"L'excellence au service des gros volumes"</i> 🚛💨
                             </p>
                         </div>
                     </div>
@@ -1306,6 +1324,12 @@
                     <button id="remove-promo-btn">×</button>
                 </div>
             </div>
+            <div class="address-container" style="margin-top: 20px; padding: 15px 0; border-bottom: 1px solid var(--tertiary-bg-color);">
+                <h4 style="margin-bottom: 10px;">📍 Adresse de livraison</h4>
+                <textarea id="delivery-address" 
+                          placeholder="Ex: 12 rue des Fleurs, 30000 Nîmes (Appartement, Étage, Code...)" 
+                          style="width: 100%; min-height: 80px; padding: 12px; border-radius: 10px; background: var(--secondary-bg-color); color: white; border: 1px solid var(--tertiary-bg-color); font-family: inherit; resize: none; box-sizing: border-box;"></textarea>
+            </div>
 
             <div class="payment-selector">
                 <h4>Paiement</h4>
@@ -1398,12 +1422,12 @@
             <p style="
             margin: inherit;"> LINKS </p>
         </button>
-        <button id="nav-avis" data-page="page-avis" class="nav-item">
+       <!--  <button id="nav-avis" data-page="page-avis" class="nav-item">
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                 <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
             </svg>
             <p style="margin: inherit;"> AVIS </p>
-        </button>
+        </button> -->
     </div>
 
     <div id="notification-toast"></div>

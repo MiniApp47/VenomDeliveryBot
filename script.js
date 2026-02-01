@@ -1553,6 +1553,8 @@ function renderProductListSimple(categoryId) {
     if (discount > subTotal) discount = subTotal;
     const totalPrice = subTotal - discount;
 
+
+
     // --- 2. CONSTRUCTION DU MESSAGE (NOUVEAU DESIGN) ---
     
     // En-tête
@@ -1587,9 +1589,13 @@ function renderProductListSimple(categoryId) {
         message += `*💰 TOTAL: ${totalPrice.toFixed(2)}€*\n`;
     }
 
-    // Pied de page
-    message += `\n📍 Livraison à convenir\n`;
-    message += `💳 Paiement: ${paymentMethod}`;
+   // --- RÉCUPÉRATION DE L'ADRESSE ---
+    const addressInput = document.getElementById('delivery-address');
+    const userAddress = addressInput ? addressInput.value.trim() : "Non précisée";
+
+    // Pied de page du message
+    message += `\n*📍 ADRESSE DE LIVRAISON :*\n${userAddress}\n`;
+    message += `\n*💳 PAIEMENT :* ${paymentMethod}`;
 
     return message;
 }
